@@ -1,0 +1,45 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="edu.upb.arcade.core" >
+4
+5    <uses-sdk android:minSdkVersion="26" />
+6
+7    <!--
+8      Permiso de "firma": solo apps firmadas con la misma llave (las 5 de este proyecto)
+9      pueden usar el servicio de scores. Se declara en todas las apps (este manifest se
+10      mezcla en cada una), así no importa en qué orden se instalen.
+11    -->
+12    <permission
+12-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:9:5-12:47
+13        android:name="edu.upb.arcade.permission.SCORES"
+13-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:10:9-56
+14        android:label="Guardar scores en Arcade UPB"
+14-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:11:9-53
+15        android:protectionLevel="signature" />
+15-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:12:9-44
+16
+17    <uses-permission android:name="edu.upb.arcade.permission.SCORES" />
+17-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:14:5-72
+17-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:14:22-69
+18
+19    <!-- Android 11+: para poder "ver" las otras apps del arcade -->
+20    <queries>
+20-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:17:5-23:15
+21        <package android:name="edu.upb.arcade" />
+21-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:18:9-50
+21-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:18:18-47
+22        <package android:name="edu.upb.arcade.monopoly" />
+22-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:19:9-59
+22-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:19:18-56
+23        <package android:name="edu.upb.arcade.tetris" />
+23-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:20:9-57
+23-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:20:18-54
+24        <package android:name="edu.upb.arcade.triqui" />
+24-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:21:9-57
+24-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:21:18-54
+25        <package android:name="edu.upb.arcade.culebrita" />
+25-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:22:9-60
+25-->D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:22:18-57
+26    </queries>
+27
+28</manifest>

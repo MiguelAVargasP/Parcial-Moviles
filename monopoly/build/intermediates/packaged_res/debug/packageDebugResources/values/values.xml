@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fondo">#07122B</color>
+    <color name="ic_launcher_background">#0B4F6C</color>
+    <string name="app_name">Monopoly UPB</string>
+    <style name="Theme.Arcade" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/fondo</item>
+    </style>
+</resources>

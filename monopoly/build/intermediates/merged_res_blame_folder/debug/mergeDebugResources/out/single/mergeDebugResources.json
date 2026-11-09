@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "edu.upb.arcade.monopoly-debug-48:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "edu.upb.arcade.monopoly-main-50:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "edu.upb.arcade.monopoly-debug-48:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "edu.upb.arcade.monopoly-main-50:/mipmap-anydpi/ic_launcher.xml"
+    }
+]

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.upb.arcade.culebrita"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="35" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+
+    <!--
+      Permiso de "firma": solo apps firmadas con la misma llave (las 5 de este proyecto)
+      pueden usar el servicio de scores. Se declara en todas las apps (este manifest se
+      mezcla en cada una), así no importa en qué orden se instalen.
+    -->
+    <permission
+        android:name="edu.upb.arcade.permission.SCORES"
+        android:label="Guardar scores en Arcade UPB"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="edu.upb.arcade.permission.SCORES" /> <!-- Android 11+: para poder "ver" las otras apps del arcade -->
+    <queries>
+        <package android:name="edu.upb.arcade" />
+        <package android:name="edu.upb.arcade.monopoly" />
+        <package android:name="edu.upb.arcade.tetris" />
+        <package android:name="edu.upb.arcade.triqui" />
+        <package android:name="edu.upb.arcade.culebrita" />
+    </queries>
+
+    <permission
+        android:name="edu.upb.arcade.culebrita.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="edu.upb.arcade.culebrita.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.Arcade" >
+        <activity
+            android:name="edu.upb.arcade.culebrita.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="edu.upb.arcade.culebrita.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

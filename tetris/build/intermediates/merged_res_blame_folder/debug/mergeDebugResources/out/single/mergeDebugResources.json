@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "edu.upb.arcade.tetris-debug-47:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "edu.upb.arcade.tetris-main-49:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "edu.upb.arcade.tetris-debug-47:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "edu.upb.arcade.tetris-main-49:/mipmap-anydpi/ic_launcher.xml"
+    }
+]

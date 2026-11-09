@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fondo">#07122B</color>
+    <color name="ic_launcher_background">#0D1F44</color>
+    <string name="app_name">Arcade UPB</string>
+    <style name="Theme.Arcade" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/fondo</item>
+    </style>
+</resources>

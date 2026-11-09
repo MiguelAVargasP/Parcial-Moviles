@@ -1,0 +1,50 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:2:1-25:12
+	package
+		INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:2:11-69
+permission#edu.upb.arcade.permission.SCORES
+ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:9:5-12:47
+	android:label
+		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:11:9-53
+	android:protectionLevel
+		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:12:9-44
+	android:name
+		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:10:9-56
+uses-permission#edu.upb.arcade.permission.SCORES
+ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:14:5-72
+	android:name
+		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:14:22-69
+queries
+ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:17:5-23:15
+package#edu.upb.arcade
+ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:18:9-50
+	android:name
+		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:18:18-47
+package#edu.upb.arcade.monopoly
+ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:19:9-59
+	android:name
+		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:19:18-56
+package#edu.upb.arcade.tetris
+ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:20:9-57
+	android:name
+		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:20:18-54
+package#edu.upb.arcade.triqui
+ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:21:9-57
+	android:name
+		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:21:18-54
+package#edu.upb.arcade.culebrita
+ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:22:9-60
+	android:name
+		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:22:18-57
+uses-sdk
+INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml
+INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml

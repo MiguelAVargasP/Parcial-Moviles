@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      Permiso de "firma": solo apps firmadas con la misma llave (las 5 de este proyecto)
+      pueden usar el servicio de scores. Se declara en todas las apps (este manifest se
+      mezcla en cada una), así no importa en qué orden se instalen.
+    -->
+    <permission
+        android:name="edu.upb.arcade.permission.SCORES"
+        android:label="Guardar scores en Arcade UPB"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="edu.upb.arcade.permission.SCORES" />
+
+    <!-- Android 11+: para poder "ver" las otras apps del arcade -->
+    <queries>
+        <package android:name="edu.upb.arcade" />
+        <package android:name="edu.upb.arcade.monopoly" />
+        <package android:name="edu.upb.arcade.tetris" />
+        <package android:name="edu.upb.arcade.triqui" />
+        <package android:name="edu.upb.arcade.culebrita" />
+    </queries>
+
+</manifest>
