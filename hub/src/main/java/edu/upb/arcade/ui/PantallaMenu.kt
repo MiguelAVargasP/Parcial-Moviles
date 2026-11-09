@@ -1,6 +1,8 @@
 package edu.upb.arcade.ui
 
 import android.Manifest
+import android.content.ActivityNotFoundException
+import android.content.Intent
 import android.widget.Toast
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -75,9 +77,8 @@ fun PantallaMenu(vm: HubViewModel) {
     var instalados by remember { mutableStateOf(emptySet<String>()) }
 
     fun revisarInstalados() {
-        instalados = JuegoArcade.entries
-            .filter { context.packageManager.getLaunchIntentForPackage(it.paquete) != null }
-            .map { it.id }.toSet()
+        // Los juegos van dentro del mismo APK: siempre están disponibles
+        instalados = JuegoArcade.entries.map { it.id }.toSet()
     }
 
     // Al volver de un juego: recargar scores y revisar qué juegos están instalados
@@ -97,11 +98,12 @@ fun PantallaMenu(vm: HubViewModel) {
     }
 
     fun abrir(juego: JuegoArcade) {
-        val intent = context.packageManager.getLaunchIntentForPackage(juego.paquete)
-        if (intent == null) {
-            Toast.makeText(context, "${juego.titulo} no está instalado. Ejecútalo desde Android Studio.", Toast.LENGTH_LONG).show()
-        } else {
+        // La actividad de cada juego vive en su módulo, dentro de este mismo APK
+        val intent = Intent().setClassName(context.packageName, "${juego.paquete}.MainActivity")
+        try {
             context.startActivity(intent)
+        } catch (e: ActivityNotFoundException) {
+            Toast.makeText(context, "No se pudo abrir ${juego.titulo}.", Toast.LENGTH_LONG).show()
         }
     }
 

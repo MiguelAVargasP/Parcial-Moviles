@@ -1,7 +1,7 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:2:1-16:12
 	package
 		INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml
 	xmlns:android
@@ -18,28 +18,6 @@ uses-permission#edu.upb.arcade.permission.SCORES
 ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:14:5-72
 	android:name
 		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:14:22-69
-queries
-ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:17:5-23:15
-package#edu.upb.arcade
-ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:18:9-50
-	android:name
-		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:18:18-47
-package#edu.upb.arcade.monopoly
-ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:19:9-59
-	android:name
-		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:19:18-56
-package#edu.upb.arcade.tetris
-ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:20:9-57
-	android:name
-		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:20:18-54
-package#edu.upb.arcade.triqui
-ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:21:9-57
-	android:name
-		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:21:18-54
-package#edu.upb.arcade.culebrita
-ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:22:9-60
-	android:name
-		ADDED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml:22:18-57
 uses-sdk
 INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Users\PERSONAL\Downloads\ArcadeUPB\core\src\main\AndroidManifest.xml

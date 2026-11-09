@@ -40,6 +40,10 @@ kotlin {
 
 dependencies {
     implementation(project(":core"))
+    implementation(project(":monopoly"))
+    implementation(project(":tetris"))
+    implementation(project(":triqui"))
+    implementation(project(":culebrita"))
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.biometric)

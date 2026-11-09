@@ -1,0 +1,33 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="edu.upb.arcade.culebrita" >
+4
+5    <uses-sdk android:minSdkVersion="26" />
+6
+7    <uses-feature
+7-->D:\Users\PERSONAL\Downloads\ArcadeUPB\culebrita\src\main\AndroidManifest.xml:4:5-95
+8        android:name="android.hardware.sensor.gyroscope"
+8-->D:\Users\PERSONAL\Downloads\ArcadeUPB\culebrita\src\main\AndroidManifest.xml:4:19-67
+9        android:required="false" />
+9-->D:\Users\PERSONAL\Downloads\ArcadeUPB\culebrita\src\main\AndroidManifest.xml:4:68-92
+10    <uses-feature
+10-->D:\Users\PERSONAL\Downloads\ArcadeUPB\culebrita\src\main\AndroidManifest.xml:5:5-99
+11        android:name="android.hardware.sensor.accelerometer"
+11-->D:\Users\PERSONAL\Downloads\ArcadeUPB\culebrita\src\main\AndroidManifest.xml:5:19-71
+12        android:required="false" />
+12-->D:\Users\PERSONAL\Downloads\ArcadeUPB\culebrita\src\main\AndroidManifest.xml:5:72-96
+13
+14    <application>
+14-->D:\Users\PERSONAL\Downloads\ArcadeUPB\culebrita\src\main\AndroidManifest.xml:7:5-13:19
+15        <activity
+15-->D:\Users\PERSONAL\Downloads\ArcadeUPB\culebrita\src\main\AndroidManifest.xml:8:9-12:20
+16            android:name="edu.upb.arcade.culebrita.MainActivity"
+16-->D:\Users\PERSONAL\Downloads\ArcadeUPB\culebrita\src\main\AndroidManifest.xml:9:13-41
+17            android:exported="false"
+17-->D:\Users\PERSONAL\Downloads\ArcadeUPB\culebrita\src\main\AndroidManifest.xml:10:13-37
+18            android:screenOrientation="portrait" >
+18-->D:\Users\PERSONAL\Downloads\ArcadeUPB\culebrita\src\main\AndroidManifest.xml:11:13-49
+19        </activity>
+20    </application>
+21
+22</manifest>

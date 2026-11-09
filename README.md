@@ -1,7 +1,7 @@
 # Arcade UPB
 
 App central con login (contraseña o huella), menú en cruz y un **servicio de scores**,
-más 4 juegos que son **apps independientes** y le envían su score a ese servicio.
+más 4 juegos que van **dentro del mismo APK** (cada juego es un módulo de librería con su Activity) y le envían su score a ese servicio.
 Todo está en Kotlin + Jetpack Compose.
 
 ## Módulos (un solo proyecto, 6 módulos)
@@ -14,6 +14,12 @@ Todo está en Kotlin + Jetpack Compose.
 | `tetris` | Tetris: flechas + arrastrar la ficha + tap para girar | `edu.upb.arcade.tetris` |
 | `triqui` | Triqui contra la CPU (score = racha) | `edu.upb.arcade.triqui` |
 | `culebrita` | Culebrita controlada con el giroscopio | `edu.upb.arcade.culebrita` |
+
+## Generar el APK (una sola app)
+```
+.\gradlew.bat :hub:assembleDebug
+```
+El APK queda en `hub\build\outputs\apk\debug\hub-debug.apk` e incluye el hub y los 4 juegos.
 
 ## Cómo correrlo
 1. Android Studio → **File › Open** → carpeta `ArcadeUPB` → espera el *Gradle Sync*.

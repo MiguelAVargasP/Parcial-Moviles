@@ -1,10 +1,10 @@
 [
     {
-        "merged": "edu.upb.arcade.hub-debug-55:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "edu.upb.arcade.hub-main-57:/drawable/ic_launcher_foreground.xml"
+        "merged": "edu.upb.arcade.hub-debug-56:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "edu.upb.arcade.hub-main-58:/mipmap-anydpi/ic_launcher.xml"
     },
     {
-        "merged": "edu.upb.arcade.hub-debug-55:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "edu.upb.arcade.hub-main-57:/mipmap-anydpi/ic_launcher.xml"
+        "merged": "edu.upb.arcade.hub-debug-56:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "edu.upb.arcade.hub-main-58:/drawable/ic_launcher_foreground.xml"
     }
 ]

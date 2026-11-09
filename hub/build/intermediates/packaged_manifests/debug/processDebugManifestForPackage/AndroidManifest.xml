@@ -18,9 +18,14 @@
     <uses-feature
         android:name="android.hardware.location.gps"
         android:required="false" />
-
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
     <!--
-      Permiso de "firma": solo apps firmadas con la misma llave (las 5 de este proyecto)
+      Permiso de "firma": solo apps firmadas con la misma llave (ahora todo es una sola app)
       pueden usar el servicio de scores. Se declara en todas las apps (este manifest se
       mezcla en cada una), así no importa en qué orden se instalen.
     -->
@@ -29,14 +34,7 @@
         android:label="Guardar scores en Arcade UPB"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="edu.upb.arcade.permission.SCORES" /> <!-- Android 11+: para poder "ver" las otras apps del arcade -->
-    <queries>
-        <package android:name="edu.upb.arcade" />
-        <package android:name="edu.upb.arcade.monopoly" />
-        <package android:name="edu.upb.arcade.tetris" />
-        <package android:name="edu.upb.arcade.triqui" />
-        <package android:name="edu.upb.arcade.culebrita" />
-    </queries> <!-- suppress DeprecatedClassUsageInspection -->
+    <uses-permission android:name="edu.upb.arcade.permission.SCORES" /> <!-- suppress DeprecatedClassUsageInspection -->
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
     <permission
@@ -53,7 +51,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.Arcade" >
         <activity
             android:name="edu.upb.arcade.MainActivity"
@@ -77,6 +74,30 @@
             </intent-filter>
         </service>
 
+        <activity
+            android:name="edu.upb.arcade.monopoly.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="edu.upb.arcade.tetris.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="edu.upb.arcade.triqui.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="edu.upb.arcade.culebrita.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" />
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="edu.upb.arcade.androidx-startup"
@@ -91,10 +112,6 @@
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
                 android:value="androidx.startup" />
         </provider>
-
-        <activity
-            android:name="androidx.compose.ui.tooling.PreviewActivity"
-            android:exported="true" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

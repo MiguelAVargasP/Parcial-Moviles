@@ -1,0 +1,20 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="edu.upb.arcade.triqui" >
+4
+5    <uses-sdk android:minSdkVersion="26" />
+6
+7    <application>
+7-->D:\Users\PERSONAL\Downloads\ArcadeUPB\triqui\src\main\AndroidManifest.xml:4:5-10:19
+8        <activity
+8-->D:\Users\PERSONAL\Downloads\ArcadeUPB\triqui\src\main\AndroidManifest.xml:5:9-9:20
+9            android:name="edu.upb.arcade.triqui.MainActivity"
+9-->D:\Users\PERSONAL\Downloads\ArcadeUPB\triqui\src\main\AndroidManifest.xml:6:13-41
+10            android:exported="false"
+10-->D:\Users\PERSONAL\Downloads\ArcadeUPB\triqui\src\main\AndroidManifest.xml:7:13-37
+11            android:screenOrientation="portrait" >
+11-->D:\Users\PERSONAL\Downloads\ArcadeUPB\triqui\src\main\AndroidManifest.xml:8:13-49
+12        </activity>
+13    </application>
+14
+15</manifest>
